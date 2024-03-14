@@ -1,0 +1,2011 @@
+2024-03-14 12:54:10,061: root: INFO: MLTrader : Executing the initialize lifecycle method
+2024-03-14 12:54:11,136: root: INFO: Current backtesting datetime 2020-01-02 08:30:00-05:00
+2024-03-14 12:54:11,137: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:11,138: root: INFO: Current backtesting datetime 2020-01-02 09:30:00-05:00
+2024-03-14 12:54:11,138: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:11,138: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:11[0m
+2024-03-14 12:54:11,139: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:11,146: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:12,130: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:12,132: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:12,133: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:12,135: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:12,135: root: INFO: Current backtesting datetime 2020-01-03 09:30:00-05:00
+2024-03-14 12:54:12,136: root: INFO: Current backtesting datetime 2020-01-03 08:30:00-05:00
+2024-03-14 12:54:12,137: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:12,138: root: INFO: Current backtesting datetime 2020-01-03 09:30:00-05:00
+2024-03-14 12:54:12,138: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:12,139: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:12[0m
+2024-03-14 12:54:12,139: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:12,140: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:12,275: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:12,276: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:12,277: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:12,279: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:12,279: root: INFO: Current backtesting datetime 2020-01-04 09:30:00-05:00
+2024-03-14 12:54:12,280: root: INFO: Current backtesting datetime 2020-01-06 08:30:00-05:00
+2024-03-14 12:54:12,280: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:12,281: root: INFO: Current backtesting datetime 2020-01-06 09:30:00-05:00
+2024-03-14 12:54:12,281: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:12,281: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:12[0m
+2024-03-14 12:54:12,282: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:12,282: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:12,438: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:12,440: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:12,442: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:12,444: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:12,444: root: INFO: Current backtesting datetime 2020-01-07 09:30:00-05:00
+2024-03-14 12:54:12,446: root: INFO: Current backtesting datetime 2020-01-07 08:30:00-05:00
+2024-03-14 12:54:12,446: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:12,447: root: INFO: Current backtesting datetime 2020-01-07 09:30:00-05:00
+2024-03-14 12:54:12,447: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:12,448: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:12[0m
+2024-03-14 12:54:12,448: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:12,449: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:12,586: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:12,588: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:12,589: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:12,591: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:12,591: root: INFO: Current backtesting datetime 2020-01-08 09:30:00-05:00
+2024-03-14 12:54:12,591: root: INFO: Current backtesting datetime 2020-01-08 08:30:00-05:00
+2024-03-14 12:54:12,592: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:12,593: root: INFO: Current backtesting datetime 2020-01-08 09:30:00-05:00
+2024-03-14 12:54:12,593: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:12,594: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:12[0m
+2024-03-14 12:54:12,594: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:12,595: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:12,727: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:12,728: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:12,729: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:12,731: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:12,731: root: INFO: Current backtesting datetime 2020-01-09 09:30:00-05:00
+2024-03-14 12:54:12,733: root: INFO: Current backtesting datetime 2020-01-09 08:30:00-05:00
+2024-03-14 12:54:12,733: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:12,734: root: INFO: Current backtesting datetime 2020-01-09 09:30:00-05:00
+2024-03-14 12:54:12,734: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:12,735: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:12[0m
+2024-03-14 12:54:12,735: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:12,736: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:12,863: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:12,864: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:12,865: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:12,867: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:12,867: root: INFO: Current backtesting datetime 2020-01-10 09:30:00-05:00
+2024-03-14 12:54:12,868: root: INFO: Current backtesting datetime 2020-01-10 08:30:00-05:00
+2024-03-14 12:54:12,869: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:12,870: root: INFO: Current backtesting datetime 2020-01-10 09:30:00-05:00
+2024-03-14 12:54:12,870: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:12,871: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:12[0m
+2024-03-14 12:54:12,871: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:12,872: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,022: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:13,024: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:13,026: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:13,027: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:13,027: root: INFO: Current backtesting datetime 2020-01-11 09:30:00-05:00
+2024-03-14 12:54:13,028: root: INFO: Current backtesting datetime 2020-01-13 08:30:00-05:00
+2024-03-14 12:54:13,029: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:13,030: root: INFO: Current backtesting datetime 2020-01-13 09:30:00-05:00
+2024-03-14 12:54:13,030: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:13,031: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:13[0m
+2024-03-14 12:54:13,031: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,032: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,191: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:13,193: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:13,194: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:13,196: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:13,196: root: INFO: Current backtesting datetime 2020-01-14 09:30:00-05:00
+2024-03-14 12:54:13,197: root: INFO: Current backtesting datetime 2020-01-14 08:30:00-05:00
+2024-03-14 12:54:13,197: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:13,198: root: INFO: Current backtesting datetime 2020-01-14 09:30:00-05:00
+2024-03-14 12:54:13,198: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:13,199: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:13[0m
+2024-03-14 12:54:13,199: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,200: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,355: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:13,358: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:13,360: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:13,362: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:13,362: root: INFO: Current backtesting datetime 2020-01-15 09:30:00-05:00
+2024-03-14 12:54:13,362: root: INFO: Current backtesting datetime 2020-01-15 08:30:00-05:00
+2024-03-14 12:54:13,363: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:13,364: root: INFO: Current backtesting datetime 2020-01-15 09:30:00-05:00
+2024-03-14 12:54:13,364: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:13,365: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:13[0m
+2024-03-14 12:54:13,365: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,366: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,515: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:13,516: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:13,517: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:13,518: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:13,519: root: INFO: Current backtesting datetime 2020-01-16 09:30:00-05:00
+2024-03-14 12:54:13,519: root: INFO: Current backtesting datetime 2020-01-16 08:30:00-05:00
+2024-03-14 12:54:13,520: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:13,521: root: INFO: Current backtesting datetime 2020-01-16 09:30:00-05:00
+2024-03-14 12:54:13,521: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:13,522: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:13[0m
+2024-03-14 12:54:13,522: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,524: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,677: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:13,678: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:13,680: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:13,681: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:13,681: root: INFO: Current backtesting datetime 2020-01-17 09:30:00-05:00
+2024-03-14 12:54:13,683: root: INFO: Current backtesting datetime 2020-01-17 08:30:00-05:00
+2024-03-14 12:54:13,684: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:13,685: root: INFO: Current backtesting datetime 2020-01-17 09:30:00-05:00
+2024-03-14 12:54:13,685: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:13,685: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:13[0m
+2024-03-14 12:54:13,686: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,687: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,819: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:13,820: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:13,823: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:13,825: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:13,825: root: INFO: Current backtesting datetime 2020-01-18 09:30:00-05:00
+2024-03-14 12:54:13,827: root: INFO: Current backtesting datetime 2020-01-21 08:30:00-05:00
+2024-03-14 12:54:13,827: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:13,828: root: INFO: Current backtesting datetime 2020-01-21 09:30:00-05:00
+2024-03-14 12:54:13,828: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:13,829: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:13[0m
+2024-03-14 12:54:13,830: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,831: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,959: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:13,960: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:13,961: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:13,963: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:13,963: root: INFO: Current backtesting datetime 2020-01-22 09:30:00-05:00
+2024-03-14 12:54:13,964: root: INFO: Current backtesting datetime 2020-01-22 08:30:00-05:00
+2024-03-14 12:54:13,965: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:13,966: root: INFO: Current backtesting datetime 2020-01-22 09:30:00-05:00
+2024-03-14 12:54:13,966: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:13,967: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:13[0m
+2024-03-14 12:54:13,967: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:13,968: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:14,108: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:14,109: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:14,111: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:14,112: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:14,112: root: INFO: Current backtesting datetime 2020-01-23 09:30:00-05:00
+2024-03-14 12:54:14,113: root: INFO: Current backtesting datetime 2020-01-23 08:30:00-05:00
+2024-03-14 12:54:14,113: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:14,114: root: INFO: Current backtesting datetime 2020-01-23 09:30:00-05:00
+2024-03-14 12:54:14,114: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:14,115: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:14[0m
+2024-03-14 12:54:14,115: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:14,116: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:14,253: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:14,255: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:14,257: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:14,258: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:14,258: root: INFO: Current backtesting datetime 2020-01-24 09:30:00-05:00
+2024-03-14 12:54:14,259: root: INFO: Current backtesting datetime 2020-01-24 08:30:00-05:00
+2024-03-14 12:54:14,259: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:14,260: root: INFO: Current backtesting datetime 2020-01-24 09:30:00-05:00
+2024-03-14 12:54:14,260: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:14,261: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:14[0m
+2024-03-14 12:54:14,262: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:14,263: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:14,393: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:14,394: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:14,395: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:14,396: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:14,397: root: INFO: Current backtesting datetime 2020-01-25 09:30:00-05:00
+2024-03-14 12:54:14,397: root: INFO: Current backtesting datetime 2020-01-27 08:30:00-05:00
+2024-03-14 12:54:14,398: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:14,399: root: INFO: Current backtesting datetime 2020-01-27 09:30:00-05:00
+2024-03-14 12:54:14,399: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:14,400: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:14[0m
+2024-03-14 12:54:14,400: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:14,400: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:14,547: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:14,548: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:14,549: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:14,551: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:14,551: root: INFO: Current backtesting datetime 2020-01-28 09:30:00-05:00
+2024-03-14 12:54:14,551: root: INFO: Current backtesting datetime 2020-01-28 08:30:00-05:00
+2024-03-14 12:54:14,551: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:14,553: root: INFO: Current backtesting datetime 2020-01-28 09:30:00-05:00
+2024-03-14 12:54:14,553: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:14,554: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:14[0m
+2024-03-14 12:54:14,554: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:14,556: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:14,690: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:14,692: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:14,693: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:14,695: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:14,695: root: INFO: Current backtesting datetime 2020-01-29 09:30:00-05:00
+2024-03-14 12:54:14,696: root: INFO: Current backtesting datetime 2020-01-29 08:30:00-05:00
+2024-03-14 12:54:14,697: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:14,698: root: INFO: Current backtesting datetime 2020-01-29 09:30:00-05:00
+2024-03-14 12:54:14,698: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:14,698: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:14[0m
+2024-03-14 12:54:14,699: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:14,700: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:14,835: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:14,836: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:14,838: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:14,840: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:14,841: root: INFO: Current backtesting datetime 2020-01-30 09:30:00-05:00
+2024-03-14 12:54:14,842: root: INFO: Current backtesting datetime 2020-01-30 08:30:00-05:00
+2024-03-14 12:54:14,842: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:14,844: root: INFO: Current backtesting datetime 2020-01-30 09:30:00-05:00
+2024-03-14 12:54:14,844: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:14,844: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:14[0m
+2024-03-14 12:54:14,845: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:14,845: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:14,996: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:14,997: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:14,999: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:15,001: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:15,001: root: INFO: Current backtesting datetime 2020-01-31 09:30:00-05:00
+2024-03-14 12:54:15,001: root: INFO: Current backtesting datetime 2020-01-31 08:30:00-05:00
+2024-03-14 12:54:15,002: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:15,003: root: INFO: Current backtesting datetime 2020-01-31 09:30:00-05:00
+2024-03-14 12:54:15,003: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:15,003: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:15[0m
+2024-03-14 12:54:15,004: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:15,005: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:15,155: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:15,157: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:15,159: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:15,161: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:15,161: root: INFO: Current backtesting datetime 2020-02-01 09:30:00-05:00
+2024-03-14 12:54:15,162: root: INFO: Current backtesting datetime 2020-02-03 08:30:00-05:00
+2024-03-14 12:54:15,162: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:15,163: root: INFO: Current backtesting datetime 2020-02-03 09:30:00-05:00
+2024-03-14 12:54:15,163: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:15,164: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:15[0m
+2024-03-14 12:54:15,164: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:15,165: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:15,273: root: INFO: [34mMLTrader : Trading iteration ended at 2024-03-14 12:54:15[0m
+2024-03-14 12:54:15,275: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:15,275: root: INFO: Current backtesting datetime 2020-02-04 09:30:00-05:00
+2024-03-14 12:54:15,275: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:15[0m
+2024-03-14 12:54:15,275: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:15,276: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:15,393: root: INFO: [34mMLTrader : Trading iteration ended at 2024-03-14 12:54:15[0m
+2024-03-14 12:54:15,395: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:15,395: root: INFO: Current backtesting datetime 2020-02-05 09:30:00-05:00
+2024-03-14 12:54:15,395: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:15[0m
+2024-03-14 12:54:15,395: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:15,396: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:15,548: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:15,549: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:15,551: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:15,558: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:15,565: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:15,566: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:15,566: root: INFO: MLTrader : Volatility nan%
+2024-03-14 12:54:15,566: root: INFO: MLTrader : Sharpe nan
+2024-03-14 12:54:15,566: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:15,566: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:15,567: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:15,873: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:15,873: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:15,873: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:15,874: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:15,874: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:15,874: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:15,875: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:15,875: root: INFO: Current backtesting datetime 2020-02-06 09:30:00-05:00
+2024-03-14 12:54:15,876: root: INFO: Current backtesting datetime 2020-02-06 08:30:00-05:00
+2024-03-14 12:54:15,876: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:15,877: root: INFO: Current backtesting datetime 2020-02-06 09:30:00-05:00
+2024-03-14 12:54:15,877: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:15,878: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:15[0m
+2024-03-14 12:54:15,878: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:15,879: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:16,033: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:16,034: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:16,035: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:16,039: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:16,048: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:16,048: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:16,049: root: INFO: MLTrader : Volatility nan%
+2024-03-14 12:54:16,049: root: INFO: MLTrader : Sharpe nan
+2024-03-14 12:54:16,049: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:16,049: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:16,049: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:16,411: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:16,411: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:16,411: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:16,411: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:16,411: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:16,413: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:16,414: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:16,414: root: INFO: Current backtesting datetime 2020-02-07 09:30:00-05:00
+2024-03-14 12:54:16,415: root: INFO: Current backtesting datetime 2020-02-07 08:30:00-05:00
+2024-03-14 12:54:16,416: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:16,417: root: INFO: Current backtesting datetime 2020-02-07 09:30:00-05:00
+2024-03-14 12:54:16,417: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:16,417: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:16[0m
+2024-03-14 12:54:16,418: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:16,418: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:16,595: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:16,597: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:16,598: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:16,601: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:16,611: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:16,611: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:16,611: root: INFO: MLTrader : Volatility nan%
+2024-03-14 12:54:16,611: root: INFO: MLTrader : Sharpe nan
+2024-03-14 12:54:16,611: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:16,612: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:16,612: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:16,745: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:16,745: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:16,745: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:16,745: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:16,746: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:16,746: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:16,747: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:16,747: root: INFO: Current backtesting datetime 2020-02-08 09:30:00-05:00
+2024-03-14 12:54:16,748: root: INFO: Current backtesting datetime 2020-02-10 08:30:00-05:00
+2024-03-14 12:54:16,748: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:16,749: root: INFO: Current backtesting datetime 2020-02-10 09:30:00-05:00
+2024-03-14 12:54:16,749: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:16,750: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:16[0m
+2024-03-14 12:54:16,750: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:16,751: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:16,862: root: INFO: [34mMLTrader : Trading iteration ended at 2024-03-14 12:54:16[0m
+2024-03-14 12:54:16,863: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:16,863: root: INFO: Current backtesting datetime 2020-02-11 09:30:00-05:00
+2024-03-14 12:54:16,863: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:16[0m
+2024-03-14 12:54:16,863: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:16,864: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:17,050: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:17,051: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:17,052: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:17,055: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:17,063: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:17,063: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:17,063: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:17,064: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:17,064: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:17,064: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:17,064: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:17,334: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:17,335: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:17,335: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:17,335: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:17,335: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:17,335: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:17,336: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:17,337: root: INFO: Current backtesting datetime 2020-02-12 09:30:00-05:00
+2024-03-14 12:54:17,337: root: INFO: Current backtesting datetime 2020-02-12 08:30:00-05:00
+2024-03-14 12:54:17,338: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:17,339: root: INFO: Current backtesting datetime 2020-02-12 09:30:00-05:00
+2024-03-14 12:54:17,339: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:17,339: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:17[0m
+2024-03-14 12:54:17,340: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:17,341: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:17,580: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:17,581: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:17,584: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:17,588: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:17,597: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:17,597: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:17,597: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:17,597: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:17,598: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:17,598: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:17,598: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:17,736: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:17,736: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:17,736: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:17,736: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:17,737: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:17,737: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:17,738: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:17,738: root: INFO: Current backtesting datetime 2020-02-13 09:30:00-05:00
+2024-03-14 12:54:17,739: root: INFO: Current backtesting datetime 2020-02-13 08:30:00-05:00
+2024-03-14 12:54:17,740: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:17,741: root: INFO: Current backtesting datetime 2020-02-13 09:30:00-05:00
+2024-03-14 12:54:17,741: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:17,741: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:17[0m
+2024-03-14 12:54:17,741: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:17,742: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:17,929: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:17,931: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:17,933: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:17,936: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:17,942: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:17,942: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:17,943: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:17,943: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:17,943: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:17,943: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:17,943: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:18,077: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:18,077: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:18,077: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:18,078: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:18,078: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:18,078: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:18,079: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:18,079: root: INFO: Current backtesting datetime 2020-02-14 09:30:00-05:00
+2024-03-14 12:54:18,080: root: INFO: Current backtesting datetime 2020-02-14 08:30:00-05:00
+2024-03-14 12:54:18,080: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:18,081: root: INFO: Current backtesting datetime 2020-02-14 09:30:00-05:00
+2024-03-14 12:54:18,081: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:18,081: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:18[0m
+2024-03-14 12:54:18,082: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:18,082: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:18,373: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:18,374: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:18,375: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:18,379: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:18,385: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:18,386: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:18,386: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:18,386: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:18,386: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:18,386: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:18,387: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:18,675: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:18,675: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:18,675: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:18,675: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:18,675: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:18,676: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:18,677: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:18,677: root: INFO: Current backtesting datetime 2020-02-15 09:30:00-05:00
+2024-03-14 12:54:18,678: root: INFO: Current backtesting datetime 2020-02-18 08:30:00-05:00
+2024-03-14 12:54:18,678: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:18,679: root: INFO: Current backtesting datetime 2020-02-18 09:30:00-05:00
+2024-03-14 12:54:18,679: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:18,680: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:18[0m
+2024-03-14 12:54:18,680: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:18,681: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:18,795: root: INFO: [34mMLTrader : Trading iteration ended at 2024-03-14 12:54:18[0m
+2024-03-14 12:54:18,797: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:18,797: root: INFO: Current backtesting datetime 2020-02-19 09:30:00-05:00
+2024-03-14 12:54:18,797: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:18[0m
+2024-03-14 12:54:18,797: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:18,798: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:18,942: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:18,944: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:18,945: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:18,949: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:18,955: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:18,955: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:18,955: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:18,956: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:18,956: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:18,956: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:18,956: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:19,086: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:19,087: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:19,087: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:19,088: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:19,089: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:19,089: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:19,091: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:19,091: root: INFO: Current backtesting datetime 2020-02-20 09:30:00-05:00
+2024-03-14 12:54:19,092: root: INFO: Current backtesting datetime 2020-02-20 08:30:00-05:00
+2024-03-14 12:54:19,093: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:19,094: root: INFO: Current backtesting datetime 2020-02-20 09:30:00-05:00
+2024-03-14 12:54:19,094: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:19,094: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:19[0m
+2024-03-14 12:54:19,095: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:19,096: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:19,278: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:19,280: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:19,281: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:19,285: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:19,295: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:19,296: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:19,296: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:19,296: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:19,296: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:19,297: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:19,297: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:19,611: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:19,611: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:19,611: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:19,611: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:19,612: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:19,612: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:19,613: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:19,613: root: INFO: Current backtesting datetime 2020-02-21 09:30:00-05:00
+2024-03-14 12:54:19,613: root: INFO: Current backtesting datetime 2020-02-21 08:30:00-05:00
+2024-03-14 12:54:19,614: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:19,615: root: INFO: Current backtesting datetime 2020-02-21 09:30:00-05:00
+2024-03-14 12:54:19,615: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:19,616: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:19[0m
+2024-03-14 12:54:19,616: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:19,617: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:19,792: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:19,794: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:19,796: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:19,799: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:19,805: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:19,806: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:19,806: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:19,806: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:19,807: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:19,807: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:19,807: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:20,084: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:20,084: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:20,084: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:20,085: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:20,085: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:20,085: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:20,086: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:20,086: root: INFO: Current backtesting datetime 2020-02-22 09:30:00-05:00
+2024-03-14 12:54:20,087: root: INFO: Current backtesting datetime 2020-02-24 08:30:00-05:00
+2024-03-14 12:54:20,088: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:20,089: root: INFO: Current backtesting datetime 2020-02-24 09:30:00-05:00
+2024-03-14 12:54:20,089: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:20,089: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:20[0m
+2024-03-14 12:54:20,090: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:20,090: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:20,240: root: INFO: [34mMLTrader : Trading iteration ended at 2024-03-14 12:54:20[0m
+2024-03-14 12:54:20,241: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:20,241: root: INFO: Current backtesting datetime 2020-02-25 09:30:00-05:00
+2024-03-14 12:54:20,241: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:20[0m
+2024-03-14 12:54:20,242: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:20,242: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:20,436: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:20,437: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:20,439: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:20,443: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:20,450: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:20,450: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:20,450: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:20,450: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:20,451: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:20,451: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:20,451: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:20,795: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:20,795: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:20,795: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:20,795: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:20,796: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:20,796: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:20,797: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:20,797: root: INFO: Current backtesting datetime 2020-02-26 09:30:00-05:00
+2024-03-14 12:54:20,798: root: INFO: Current backtesting datetime 2020-02-26 08:30:00-05:00
+2024-03-14 12:54:20,798: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:20,799: root: INFO: Current backtesting datetime 2020-02-26 09:30:00-05:00
+2024-03-14 12:54:20,799: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:20,800: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:20[0m
+2024-03-14 12:54:20,800: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:20,801: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:20,963: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:20,965: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:20,966: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:20,969: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:20,976: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:20,976: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:20,977: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:20,977: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:20,977: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:20,977: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:20,977: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:21,115: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:21,116: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:21,116: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:21,116: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:21,116: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:21,116: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:21,118: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:21,118: root: INFO: Current backtesting datetime 2020-02-27 09:30:00-05:00
+2024-03-14 12:54:21,119: root: INFO: Current backtesting datetime 2020-02-27 08:30:00-05:00
+2024-03-14 12:54:21,119: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:21,120: root: INFO: Current backtesting datetime 2020-02-27 09:30:00-05:00
+2024-03-14 12:54:21,120: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:21,121: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:21[0m
+2024-03-14 12:54:21,121: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:21,122: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:21,281: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:21,282: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:21,284: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:21,287: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:21,296: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:21,296: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:21,296: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:21,296: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:21,297: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:21,297: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:21,297: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:21,627: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:21,627: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:21,627: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:21,628: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:21,628: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:21,628: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:21,629: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:21,629: root: INFO: Current backtesting datetime 2020-02-28 09:30:00-05:00
+2024-03-14 12:54:21,630: root: INFO: Current backtesting datetime 2020-02-28 08:30:00-05:00
+2024-03-14 12:54:21,630: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:21,631: root: INFO: Current backtesting datetime 2020-02-28 09:30:00-05:00
+2024-03-14 12:54:21,631: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:21,632: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:21[0m
+2024-03-14 12:54:21,632: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:21,633: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:21,789: root: INFO: [34mMLTrader : Trading iteration ended at 2024-03-14 12:54:21[0m
+2024-03-14 12:54:21,790: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:21,790: root: INFO: Current backtesting datetime 2020-02-29 09:30:00-05:00
+2024-03-14 12:54:21,790: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:21[0m
+2024-03-14 12:54:21,791: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:21,791: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:21,970: root: INFO: [34mMLTrader : Trading iteration ended at 2024-03-14 12:54:21[0m
+2024-03-14 12:54:21,971: root: INFO: Current backtesting datetime 2020-02-29 09:25:00-05:00
+2024-03-14 12:54:21,974: root: INFO: Current backtesting datetime 2020-02-29 09:25:00-05:00
+2024-03-14 12:54:21,974: root: INFO: MLTrader : Executing the after_market_closes lifecycle method
+2024-03-14 12:54:21,974: root: INFO: Current backtesting datetime 2020-03-02 08:30:00-05:00
+2024-03-14 12:54:21,975: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:21,976: root: INFO: Current backtesting datetime 2020-03-02 09:30:00-05:00
+2024-03-14 12:54:21,976: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:21,976: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:21[0m
+2024-03-14 12:54:21,977: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:21,977: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:22,085: root: INFO: [34mMLTrader : Trading iteration ended at 2024-03-14 12:54:22[0m
+2024-03-14 12:54:22,087: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:22,087: root: INFO: Current backtesting datetime 2020-03-03 09:30:00-05:00
+2024-03-14 12:54:22,087: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:22[0m
+2024-03-14 12:54:22,087: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:22,088: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:22,280: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:22,281: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:22,283: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:22,286: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:22,294: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:22,294: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:22,295: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:22,295: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:22,295: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:22,295: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:22,295: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:22,622: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:22,622: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:22,623: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:22,623: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:22,623: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:22,623: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:22,624: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:22,625: root: INFO: Current backtesting datetime 2020-03-04 09:30:00-05:00
+2024-03-14 12:54:22,626: root: INFO: Current backtesting datetime 2020-03-04 08:30:00-05:00
+2024-03-14 12:54:22,626: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:22,627: root: INFO: Current backtesting datetime 2020-03-04 09:30:00-05:00
+2024-03-14 12:54:22,627: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:22,628: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:22[0m
+2024-03-14 12:54:22,628: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:22,629: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:22,837: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:22,838: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:22,839: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:22,843: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:22,849: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:22,850: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:22,850: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:22,850: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:22,850: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:22,850: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:22,850: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:22,988: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:22,988: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:22,988: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:22,989: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:22,989: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:22,989: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:22,990: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:22,990: root: INFO: Current backtesting datetime 2020-03-05 09:30:00-05:00
+2024-03-14 12:54:22,991: root: INFO: Current backtesting datetime 2020-03-05 08:30:00-05:00
+2024-03-14 12:54:22,992: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:22,992: root: INFO: Current backtesting datetime 2020-03-05 09:30:00-05:00
+2024-03-14 12:54:22,993: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:22,993: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:22[0m
+2024-03-14 12:54:22,993: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:22,994: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:23,214: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:23,215: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:23,216: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:23,219: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:23,228: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:23,228: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:23,228: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:23,229: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:23,229: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:23,229: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:23,229: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:23,535: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:23,535: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:23,535: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:23,536: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:23,536: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:23,536: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:23,537: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:23,538: root: INFO: Current backtesting datetime 2020-03-06 09:30:00-05:00
+2024-03-14 12:54:23,539: root: INFO: Current backtesting datetime 2020-03-06 08:30:00-05:00
+2024-03-14 12:54:23,539: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:23,540: root: INFO: Current backtesting datetime 2020-03-06 09:30:00-05:00
+2024-03-14 12:54:23,540: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:23,541: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:23[0m
+2024-03-14 12:54:23,541: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:23,541: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:23,683: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:23,684: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:23,686: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:23,689: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:23,696: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:23,697: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:23,697: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:23,697: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:23,697: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:23,698: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:23,698: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:23,837: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:23,837: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:23,837: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:23,838: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:23,838: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:23,838: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:23,839: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:23,840: root: INFO: Current backtesting datetime 2020-03-07 09:30:00-05:00
+2024-03-14 12:54:23,840: root: INFO: Current backtesting datetime 2020-03-09 07:30:00-05:00
+2024-03-14 12:54:23,841: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:23,842: root: INFO: Current backtesting datetime 2020-03-09 08:30:00-05:00
+2024-03-14 12:54:23,842: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:23,842: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:23[0m
+2024-03-14 12:54:23,843: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:23,843: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:23,972: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:23,972: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:23,974: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:23,977: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:23,984: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:23,985: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:23,985: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:23,985: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:23,985: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:23,985: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:23,986: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:24,143: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:24,144: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:24,144: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:24,144: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:24,144: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:24,144: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:24,145: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:24,146: root: INFO: Current backtesting datetime 2020-03-10 08:30:00-05:00
+2024-03-14 12:54:24,146: root: INFO: Current backtesting datetime 2020-03-10 07:30:00-05:00
+2024-03-14 12:54:24,147: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:24,148: root: INFO: Current backtesting datetime 2020-03-10 08:30:00-05:00
+2024-03-14 12:54:24,148: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:24,149: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:24[0m
+2024-03-14 12:54:24,149: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:24,149: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:24,275: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:24,276: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:24,278: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:24,281: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:24,287: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:24,287: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:24,287: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:24,288: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:24,288: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:24,288: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:24,288: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:24,555: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:24,556: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:24,556: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:24,556: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:24,556: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:24,556: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:24,557: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:24,558: root: INFO: Current backtesting datetime 2020-03-11 08:30:00-05:00
+2024-03-14 12:54:24,558: root: INFO: Current backtesting datetime 2020-03-11 07:30:00-05:00
+2024-03-14 12:54:24,559: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:24,560: root: INFO: Current backtesting datetime 2020-03-11 08:30:00-05:00
+2024-03-14 12:54:24,560: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:24,560: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:24[0m
+2024-03-14 12:54:24,561: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:24,561: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:24,687: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:24,689: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:24,691: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:24,694: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:24,701: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:24,701: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:24,701: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:24,701: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:24,701: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:24,701: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:24,701: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:24,839: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:24,839: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:24,839: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:24,840: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:24,840: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:24,840: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:24,841: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:24,841: root: INFO: Current backtesting datetime 2020-03-12 08:30:00-05:00
+2024-03-14 12:54:24,842: root: INFO: Current backtesting datetime 2020-03-12 07:30:00-05:00
+2024-03-14 12:54:24,843: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:24,843: root: INFO: Current backtesting datetime 2020-03-12 08:30:00-05:00
+2024-03-14 12:54:24,843: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:24,844: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:24[0m
+2024-03-14 12:54:24,844: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:24,845: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:24,971: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:24,973: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:24,974: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:24,977: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:24,984: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:24,984: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:24,985: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:24,985: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:24,985: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:24,985: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:24,985: root: INFO: MLTrader : --- SPY Benchmark Performance ---
+2024-03-14 12:54:25,224: root: INFO: MLTrader : Total Return: 56.05%
+2024-03-14 12:54:25,225: root: INFO: MLTrader : SPY CAGR 11.80%
+2024-03-14 12:54:25,225: root: INFO: MLTrader : SPY Volatility 22.62%
+2024-03-14 12:54:25,225: root: INFO: MLTrader : SPY Sharpe 0.29
+2024-03-14 12:54:25,225: root: INFO: MLTrader : SPY Max Drawdown 33.68% on 2020-03-23
+2024-03-14 12:54:25,225: root: INFO: MLTrader : SPY RoMaD 35.04%
+2024-03-14 12:54:25,227: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:25,227: root: INFO: Current backtesting datetime 2020-03-13 08:30:00-05:00
+2024-03-14 12:54:25,228: root: INFO: Current backtesting datetime 2020-03-13 07:30:00-05:00
+2024-03-14 12:54:25,228: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:25,229: root: INFO: Current backtesting datetime 2020-03-13 08:30:00-05:00
+2024-03-14 12:54:25,229: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:25,230: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:25[0m
+2024-03-14 12:54:25,230: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:25,231: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:25,342: root: INFO: [34mMLTrader : Trading iteration ended at 2024-03-14 12:54:25[0m
+2024-03-14 12:54:25,343: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:25,344: root: INFO: Current backtesting datetime 2020-03-14 08:30:00-05:00
+2024-03-14 12:54:25,344: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:25[0m
+2024-03-14 12:54:25,344: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:25,345: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:25,466: root: INFO: [34mMLTrader : Trading iteration ended at 2024-03-14 12:54:25[0m
+2024-03-14 12:54:25,468: root: INFO: Current backtesting datetime 2020-03-14 08:25:00-05:00
+2024-03-14 12:54:25,469: root: INFO: Current backtesting datetime 2020-03-14 08:25:00-05:00
+2024-03-14 12:54:25,469: root: INFO: MLTrader : Executing the after_market_closes lifecycle method
+2024-03-14 12:54:25,470: root: INFO: Current backtesting datetime 2020-03-16 07:30:00-05:00
+2024-03-14 12:54:25,470: root: INFO: MLTrader : Executing the before_market_opens lifecycle method
+2024-03-14 12:54:25,471: root: INFO: Current backtesting datetime 2020-03-16 08:30:00-05:00
+2024-03-14 12:54:25,471: root: INFO: MLTrader : Executing the before_starting_trading lifecycle method
+2024-03-14 12:54:25,473: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:25[0m
+2024-03-14 12:54:25,473: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:25,474: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:25,618: root: INFO: [34mMLTrader : Trading iteration ended at 2024-03-14 12:54:25[0m
+2024-03-14 12:54:25,619: root: INFO: MLTrader : [34mSleeping for 86400 seconds[0m
+2024-03-14 12:54:25,619: root: INFO: Current backtesting datetime 2020-03-17 08:30:00-05:00
+2024-03-14 12:54:25,619: root: INFO: [34mMLTrader : Executing the on_trading_iteration lifecycle method at 2024-03-14 12:54:25[0m
+2024-03-14 12:54:25,620: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:25,620: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-03-14 12:54:25,810: root: ERROR: Strategy.create_order() got an unexpected keyword argument 'type'
+2024-03-14 12:54:25,811: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 808, in run
+    self._run_trading_session()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 759, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 283, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 307, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 86, in func_output
+    return func_input(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\strategies\strategy_executor.py", line 377, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\omare\AppData\Local\Programs\Python\Python312\Lib\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\omare\Documentos\Git Hub\AI-Trading-Bot\bot.py", line 113, in on_trading_iteration
+    order = self.create_order(
+            ^^^^^^^^^^^^^^^^^^
+TypeError: Strategy.create_order() got an unexpected keyword argument 'type'
+
+2024-03-14 12:54:25,812: root: INFO: MLTrader : Executing the on_bot_crash event method
+2024-03-14 12:54:25,816: root: INFO: MLTrader : --- MLTrader Strategy Performance  ---
+2024-03-14 12:54:25,824: root: INFO: MLTrader : Total Return: 0.00%
+2024-03-14 12:54:25,824: root: INFO: MLTrader : CAGR 0.00%
+2024-03-14 12:54:25,824: root: INFO: MLTrader : Volatility 0.00%
+2024-03-14 12:54:25,824: root: INFO: MLTrader : Sharpe 0.00
+2024-03-14 12:54:25,824: root: INFO: MLTrader : Max Drawdown 0.00% on 2020-02-04
+2024-03-14 12:54:25,824: root: INFO: MLTrader : RoMaD 0.00%
+2024-03-14 12:54:25,825: root: INFO: MLTrader : --- SPY Benchmark Performance ---
